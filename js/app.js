@@ -8,9 +8,9 @@ function findMeal(mealName) {
                 displayMeal(meal);
             });
         })
-        .catch(error => alert('This meal is not available. Please try another one.'))
+        .catch(error => alert("We don't have this item! Kindly choose between what we have!"))
 }
-// creating meal box
+// Meal container
 const displayMeal = mealContainer => {
         const mealArea = document.getElementById('mealArea');
         const mealDiv = document.createElement('div');
@@ -23,17 +23,14 @@ const displayMeal = mealContainer => {
     }
     // search button handler
 document.getElementById('search').addEventListener('click', function() {
-    // getting mealName
     const meal = document.getElementById('meal').value;
-    // checking that search value is not empty
+    // checking empty search box
     if (meal == "") {
-        alert('Please Provide a meal Name');
+        alert("You haven't search with proper meal name!");
     } else {
         findMeal(meal);
     }
-    document.getElementById('meal').value = "";
-    document.getElementById('mealArea').innerText = "";
-    document.getElementById('ingredientsArea').innerText = "";
+
 })
 
 // Lookup full meal details by id
@@ -47,13 +44,13 @@ const displayIngredient = name => {
                 });
             })
     }
-    // ingredient display function
+    // Display ingredients
 const ingredient = ingredientID => {
     const ingredientsArea = document.getElementById('ingredientsArea');
     ingredientsArea.innerHTML = `<div class="ingredient">
           <img class="ingredient-img" src="${ingredientID.strMealThumb}" alt="">
           <h3 class="ingredientName">${ingredientID.strMeal}</h3>
-          <h5 class="ingredientID-title">ingredientsArea for</h5>
+          <h5 class="ingredientID-title">Ingredients: </h5>
           <ol>
               <li> ${ingredientID.strIngredient1}</li>
               <li> ${ingredientID.strIngredient2}</li>

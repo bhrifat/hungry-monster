@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     background-color: darkkhaki;
 }
 
@@ -14,6 +19,9 @@ h3 {
     text-align: center;
 }
 
+
+/* Meal area start */
+
 #mealArea {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -26,8 +34,7 @@ h3 {
     width: 100%;
 }
 
-.meal,
-#search {
+.meal {
     box-shadow: 5px 5px 10px 10px khaki;
     text-align: center;
     border-radius: 20px;
@@ -55,9 +62,8 @@ h3 {
 }
 
 #ingredientsArea>li {
-    margin-left: -30px;
     list-style: none;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 img.ingredient-img {
@@ -69,7 +75,24 @@ img.ingredient-img {
     margin-bottom: 50px;
 }
 
+
+/* Meal area end */
+
+
+/* footer st */
+
 footer {
     text-align: center;
     margin-top: 5%;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    #mealArea,
+    #ingredientsArea {
+        width: 100%;
+    }
 }

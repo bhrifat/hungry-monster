@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hungry Monster</title>
+    <!--CSS -->
+    <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- Local CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -34,32 +36,35 @@
             </div>
         </div>
     </nav>
-    <!-- End Navbar -->
-    <div class="container">
-        <h1>Hungry Monster</h1>
-        <h3>Search your food and enjoy your time</h3>
-
-        <form class="col-md-6 m-auto py-5">
-            <div class="input-group mb-3">
-                <input id="meal" type="text" class="form-control" placeholder="Search here">
-                <div class="input-group-append">
-                    <button id="search" type="button" class="btn btn-danger">Search</button>
+    <!-- Navbar end -->
+    <main>
+        <div class="container">
+            <h1>Hungry Monster</h1>
+            <h3>Search your food and enjoy your time</h3>
+            <!-- Search box -->
+            <form class="col-md-6 m-auto py-5">
+                <div class="input-group mb-3">
+                    <input id="meal" type="text" class="form-control" placeholder="Search here">
+                    <div class="input-group-append">
+                        <button id="search" type="button" class="btn btn-danger">Search</button>
+                    </div>
                 </div>
+            </form>
+            <!-- Ingredient and meal area -->
+            <div id="ingredientsArea">
+
             </div>
-        </form>
-        <div id="ingredientsArea">
+            <div id="mealArea">
 
+            </div>
         </div>
-        <div id="mealArea">
-
-        </div>
-    </div>
-    <!-- Local JS -->
-    <script src="app.js"></script>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>All right reserved By <a target="_blank" href="https://www.linkedin.com/in/badrul-hasan-rifat-3aa9021a7/">Badrul Hasan Rifat</a> 2021.</p>
+    </footer>
+    <!-- Javascript source -->
+    <script src="js/app.js"></script>
 </body>
-<footer>
-    <p>All right reserved 2021.</p>
-
-</footer>
 
 </html>
