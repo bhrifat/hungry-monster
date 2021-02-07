@@ -90,9 +90,5 @@ footer a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    #mealArea,
-    #ingredientsArea {
-        width: 100%;
-    }
-}
+
+/* css end */

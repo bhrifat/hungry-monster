@@ -49,8 +49,8 @@ const ingredient = ingredientID => {
     const ingredientsArea = document.getElementById('ingredientsArea');
     ingredientsArea.innerHTML = `<div class="ingredient">
           <img class="ingredient-img" src="${ingredientID.strMealThumb}" alt="">
-          <h3 class="ingredientName">${ingredientID.strMeal}</h3>
-          <h5 class="ingredientID-title">Ingredients: </h5>
+          <h2 class="ingredientName">${ingredientID.strMeal}</h2>
+          <h4 class="ingredientID-title">Ingredients: </h4>
           <ol>
               <li> ${ingredientID.strIngredient1}</li>
               <li> ${ingredientID.strIngredient2}</li>
@@ -63,3 +63,5 @@ const ingredient = ingredientID => {
           </ol>
       </div>`
 }
+
+// End
