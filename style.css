@@ -1,0 +1,75 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darkkhaki;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(58, 9, 0);
+    font-weight: 2em;
+    font-size: 8em;
+}
+
+h3 {
+    text-align: center;
+}
+
+#mealArea {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+
+#mealArea img {
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.meal,
+#search {
+    box-shadow: 5px 5px 10px 10px khaki;
+    text-align: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#ingredientsArea {
+    width: 50%;
+    margin: auto;
+}
+
+.mealName {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.ingredientName {
+    padding: 25px 0px;
+    font-weight: 700;
+}
+
+.ingredientID-title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#ingredientsArea>li {
+    margin-left: -30px;
+    list-style: none;
+    font-size: 18px;
+}
+
+img.ingredient-img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.ingredient {
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+}
