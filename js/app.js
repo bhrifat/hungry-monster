@@ -25,7 +25,7 @@ const displayMeal = mealContainer => {
 document.getElementById('search').addEventListener('click', function() {
     const meal = document.getElementById('meal').value;
     // checking empty search box
-    if (meal == "") {
+    if (meal === "") {
         alert("You haven't search with proper meal name!");
     } else {
         findMeal(meal);
@@ -59,8 +59,9 @@ const ingredient = ingredientID => {
               <li> ${ingredientID.strIngredient5}</li>
               <li> ${ingredientID.strIngredient6}</li>
               <li> ${ingredientID.strIngredient7}</li>
-              
+              <p ${ingredientID.strInstructions}</p>
           </ol>
+          
       </div>`
 }
 
